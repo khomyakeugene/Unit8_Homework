@@ -1,11 +1,6 @@
 package com.company.utils;
 
-import javafx.collections.transformation.SortedList;
-
 import java.util.AbstractCollection;
-import java.util.List;
-import java.util.SortedSet;
-import java.util.TreeSet;
 
 /**
  * Created by Yevgen on 17.01.2016 as a part of the project "Unit8_Homework".
