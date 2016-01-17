@@ -46,4 +46,16 @@ public class MusicShop {
     public void showAllInstruments() {
         Collections.printList(getInstruments());
     }
+
+    public void sortInstrumentsByType() {
+        ArrayList<MusicalInstrument> copyOfInstruments = new ArrayList<>();
+
+        copyOfInstruments.addAll(instruments);
+        instruments.clear();
+
+        copyOfInstruments
+                .stream()
+                .sorted((i1, i2) -> i1.getInstrumentType().compareTo(i2.getInstrumentType()))
+                .forEach(i -> instruments.add(i));
+    }
 }

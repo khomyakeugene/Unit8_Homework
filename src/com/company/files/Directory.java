@@ -1,6 +1,6 @@
 package com.company.files;
 
-import java.util.HashMap;
+import java.util.*;
 
 /**
  * Created by Yevgen on 20.12.2015.
@@ -22,5 +22,17 @@ public class Directory extends SimpleFile {
 
     public void addFile(SimpleFile file) {
         files.put(file.getFileName(), file);
+    }
+
+    public ArrayList getSortedFileNameList() {
+        ArrayList resultSet = new ArrayList<>();
+
+        List<String> sourceList = new ArrayList<>(files.keySet());
+        sourceList
+                .stream()
+                .sorted((f1, f2) -> f1.compareTo(f2))
+                .forEach(f -> resultSet.add(f));
+
+        return resultSet;
     }
 }

@@ -1,6 +1,7 @@
 package com.company.tests;
 
 import com.company.files.*;
+import com.company.utils.Collections;
 import com.company.utils.Utils;
 
 import java.io.IOException;
@@ -16,6 +17,7 @@ public class TestFileData {
     public final static String IMAGE_FILE_EXT = ".img";
     public final static String TEXT_DATA_MESSAGE = "Text data: {0}";
     public final static String FILE_DATA_MESSAGE = "File[{0}]: name - {1}, type - {2}";
+    public static final String SORTED_FILENAME_LIST = "Sorted list of filenames:";
     // --------------------------------------------------------------
 
     public static final String TEST_TEXT = "Test Text";
@@ -60,7 +62,10 @@ public class TestFileData {
             Utils.printMessage(MessageFormat.format(FILE_DATA_MESSAGE, i,
                     ((SimpleFile)directoryData[i]).getFileName(),
                     ((SimpleFile)directoryData[i]).getFileType()));
-        }
+
+        Utils.printMessage(SORTED_FILENAME_LIST);
+        Collections.printList(directory.getSortedFileNameList());
+    }
 
     public void demonstrateDirectoryData() {
         initDirectoryData();

@@ -7,8 +7,8 @@ import java.util.AbstractCollection;
  */
 public class Collections {
     public static void printList(AbstractCollection list) {
-        list.
-                stream().
-                forEach(p -> Utils.printMessage(p.toString()));
+        list
+                .stream()
+                .forEach(p -> Utils.printMessage(p.toString()));
     }
 }
