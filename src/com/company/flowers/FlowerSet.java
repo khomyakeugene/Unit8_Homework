@@ -4,7 +4,6 @@ import com.company.utils.PrintCollection;
 import com.company.utils.Utils;
 
 import java.util.ArrayList;
-import java.util.Vector;
 
 /**
  * Created by Yevgen on 21.12.2015.
@@ -32,7 +31,7 @@ public class FlowerSet {
     }
 
     public void showFlowerSet() {
-        Utils.writeMessage(getClass().getName());
+        Utils.printMessage(getClass().getName());
 
         PrintCollection.printList(getFlowers());
     }

@@ -4,7 +4,6 @@ import com.company.utils.PrintCollection;
 import com.company.utils.Utils;
 
 import java.util.ArrayList;
-import java.util.Vector;
 
 /**
  * Created by Yevgen on 21.12.2015.
@@ -39,7 +38,7 @@ public class MusicShop {
     }
 
     public void showMusicShop() {
-        Utils.writeMessage(getShopName());
+        Utils.printMessage(getShopName());
 
         showAllInstruments();
     }

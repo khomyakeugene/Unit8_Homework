@@ -8,7 +8,7 @@ import java.util.List;
 public class PrintCollection {
     public static void printList(List list) {
         list.stream().
-                forEach(p -> Utils.writeMessage(p.toString()));
+                forEach(p -> Utils.printMessage(p.toString()));
     }
 
 }

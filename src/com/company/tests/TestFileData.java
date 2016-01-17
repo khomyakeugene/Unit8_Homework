@@ -57,7 +57,7 @@ public class TestFileData {
         Object[] directoryData = fileList.values().toArray();
 
         for (int i=0; i < commonCount; i++)
-            Utils.writeMessage(MessageFormat.format(FILE_DATA_MESSAGE, i,
+            Utils.printMessage(MessageFormat.format(FILE_DATA_MESSAGE, i,
                     ((SimpleFile)directoryData[i]).getFileName(),
                     ((SimpleFile)directoryData[i]).getFileType()));
         }
@@ -70,14 +70,14 @@ public class TestFileData {
 
 
     private void showFileData() {
-        Utils.writeMessage(Utils.getClassNameMessage(simpleFile));
+        Utils.printMessage(Utils.getClassNameMessage(simpleFile));
 // ---------------
 
-        Utils.writeMessage(Utils.getClassNameMessage(textFile));
-        Utils.writeMessage(MessageFormat.format(TEXT_DATA_MESSAGE, textFile.getText()));
+        Utils.printMessage(Utils.getClassNameMessage(textFile));
+        Utils.printMessage(MessageFormat.format(TEXT_DATA_MESSAGE, textFile.getText()));
 
-        Utils.writeMessage(Utils.getClassNameMessage(audioFile));
-        Utils.writeMessage(Utils.getClassNameMessage(imageFile));
+        Utils.printMessage(Utils.getClassNameMessage(audioFile));
+        Utils.printMessage(Utils.getClassNameMessage(imageFile));
     }
 
     public void demonstrateFileData() throws IOException {
