@@ -1,6 +1,6 @@
 package com.company.music;
 
-import com.company.utils.PrintCollection;
+import com.company.utils.Collections;
 import com.company.utils.Utils;
 
 import java.util.ArrayList;
@@ -44,6 +44,6 @@ public class MusicShop {
     }
 
     public void showAllInstruments() {
-        PrintCollection.printList(getInstruments());
+        Collections.printList(getInstruments());
     }
 }

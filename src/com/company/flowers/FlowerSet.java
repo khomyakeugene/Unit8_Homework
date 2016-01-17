@@ -1,6 +1,6 @@
 package com.company.flowers;
 
-import com.company.utils.PrintCollection;
+import com.company.utils.Collections;
 import com.company.utils.Utils;
 
 import java.util.ArrayList;
@@ -33,6 +33,6 @@ public class FlowerSet {
     public void showFlowerSet() {
         Utils.printMessage(getClass().getName());
 
-        PrintCollection.printList(getFlowers());
+        Collections.printList(getFlowers());
     }
 }
