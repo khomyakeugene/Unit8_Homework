@@ -23,14 +23,4 @@ public class Directory extends SimpleFile {
     public void addFile(SimpleFile file) {
         files.put(file.getFileName(), file);
     }
-
-    public SimpleFile getFileByName(String fileName) throws FileNotFoundException {
-        SimpleFile simpleFile = files.get(fileName);
-
-        if (simpleFile == null) {
-            throw new FileNotFoundException(fileName);
-        }
-
-        return simpleFile;
-    }
 }
