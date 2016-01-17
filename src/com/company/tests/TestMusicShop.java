@@ -4,6 +4,9 @@ import com.company.music.Guitar;
 import com.company.music.MusicShop;
 import com.company.music.Piano;
 import com.company.music.Trumpet;
+import com.company.utils.Collections;
+
+import java.util.Collection;
 
 /**
  * Created by Yevgen on 21.12.2015.
@@ -17,9 +20,10 @@ public class TestMusicShop {
         musicShop = new MusicShop(MUSIC_SHOP_NAME);
 
         musicShop.addInstrument(new Guitar());
-        musicShop.addInstrument(new Guitar());
-        musicShop.addInstrument(new Piano());
         musicShop.addInstrument(new Trumpet());
+        musicShop.addInstrument(new Guitar());
+        musicShop.addInstrument(new Trumpet());
+        musicShop.addInstrument(new Piano());
     }
 
     private void showMusicShop() {
