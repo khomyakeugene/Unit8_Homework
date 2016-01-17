@@ -35,4 +35,16 @@ public class Directory extends SimpleFile {
 
         return resultSet;
     }
+
+    public void sortDirectoryByFilename() {
+        HashMap<String, SimpleFile> list = new HashMap<>();
+        ArrayList filenameList = getSortedFileNameList();
+
+        list.putAll(files);
+        files.clear();
+
+        filenameList
+                .stream()
+                .forEach(f -> addFile(list.get(f)));
+    }
 }
