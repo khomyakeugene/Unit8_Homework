@@ -10,7 +10,7 @@ import java.io.IOException;
 public class Main {
     static String thisProgramName = Utils.getProgramName();
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException { //и все-таки эксепшены лучше обрабатывать в программе
         demonstrateData();
     }
 
