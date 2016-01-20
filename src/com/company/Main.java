@@ -10,11 +10,11 @@ import java.io.IOException;
 public class Main {
     static String thisProgramName = Utils.getProgramName();
 
-    public static void main(String[] args) throws IOException { //и все-таки эксепшены лучше обрабатывать в программе
+    public static void main(String[] args) {
         demonstrateData();
     }
 
-    public static void demonstrateData() throws IOException {
+    public static void demonstrateData() {
         // Demonstrate "file infrastructure"
         new TestFileData().demonstrateData(thisProgramName);
 

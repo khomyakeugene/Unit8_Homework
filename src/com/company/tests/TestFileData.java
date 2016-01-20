@@ -89,13 +89,13 @@ public class TestFileData {
         Utils.printMessage(Utils.getClassNameMessage(imageFile));
     }
 
-    public void demonstrateFileData() throws IOException {
+    public void demonstrateFileData() {
         initFileData();
         showFileData();
     }
 // ----------------------------------------
 
-    public void demonstrateData(String testFilename) throws IOException {
+    public void demonstrateData(String testFilename) {
         setTestFilename(testFilename);
         
         demonstrateFileData();
