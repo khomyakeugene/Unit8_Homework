@@ -5,8 +5,6 @@ import com.company.tests.TestFlowerData;
 import com.company.tests.TestMusicShop;
 import com.company.utils.Utils;
 
-import java.io.IOException;
-
 public class Main {
     static String thisProgramName = Utils.getProgramName();
 
