@@ -11,6 +11,7 @@ import java.util.HashMap;
  * Created by Yevgen on 21.12.2015.
  */
 public class TestFileData {
+    public final static int TABLE_WIDTH = 70;
     public final static String TEXT_FILE_EXT = ".txt";
     public final static String AUDIO_FILE_EXT = ".aud";
     public final static String IMAGE_FILE_EXT = ".img";
@@ -69,7 +70,9 @@ public class TestFileData {
         showDirectoryData();
 
         Utils.printMessage(SORTED_FILENAME_LIST);
-        Collections.printList(directory.getSortedFileNameList());
+        // Show as a table
+        String className = Utils.getClassName();
+        Collections.printListAsTable(directory.getSortedFileNameList(), className, TABLE_WIDTH);
 
         directory.sortDirectoryByFilename();
         Utils.printMessage(SORTED_FILE_LIST);

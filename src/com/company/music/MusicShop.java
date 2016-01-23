@@ -1,14 +1,14 @@
 package com.company.music;
 
 import com.company.utils.Collections;
-import com.company.utils.Utils;
-
 import java.util.ArrayList;
 
 /**
  * Created by Yevgen on 21.12.2015.
  */
 public class MusicShop {
+    public final static int TABLE_WIDTH = 80;
+
     private String shopName;
     private ArrayList<MusicalInstrument> instruments;
 
@@ -38,13 +38,8 @@ public class MusicShop {
     }
 
     public void showMusicShop() {
-        Utils.printMessage(getShopName());
-
-        showAllInstruments();
-    }
-
-    public void showAllInstruments() {
-        Collections.printList(getInstruments());
+        // Show as a table
+        Collections.printListAsTable(getInstruments(), getShopName(), TABLE_WIDTH);
     }
 
     public void sortInstrumentsByType() {
